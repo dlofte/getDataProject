@@ -1,0 +1,92 @@
+Line 1: 1 tBodyAcc-mean-X
+Line 2: 2 tBodyAcc-mean-Y
+Line 3: 3 tBodyAcc-mean-Z
+Line 4: 4 tBodyAcc-std-X
+Line 5: 5 tBodyAcc-std-Y
+Line 6: 6 tBodyAcc-std-Z
+Line 41: 41 tGravityAcc-mean-X
+Line 42: 42 tGravityAcc-mean-Y
+Line 43: 43 tGravityAcc-mean-Z
+Line 44: 44 tGravityAcc-std-X
+Line 45: 45 tGravityAcc-std-Y
+Line 46: 46 tGravityAcc-std-Z
+Line 81: 81 tBodyAccJerk-mean-X
+Line 82: 82 tBodyAccJerk-mean-Y
+Line 83: 83 tBodyAccJerk-mean-Z
+Line 84: 84 tBodyAccJerk-std-X
+Line 85: 85 tBodyAccJerk-std-Y
+Line 86: 86 tBodyAccJerk-std-Z
+Line 121: 121 tBodyGyro-mean-X
+Line 122: 122 tBodyGyro-mean-Y
+Line 123: 123 tBodyGyro-mean-Z
+Line 124: 124 tBodyGyro-std-X
+Line 125: 125 tBodyGyro-std-Y
+Line 126: 126 tBodyGyro-std-Z
+Line 161: 161 tBodyGyroJerk-mean-X
+Line 162: 162 tBodyGyroJerk-mean-Y
+Line 163: 163 tBodyGyroJerk-mean-Z
+Line 164: 164 tBodyGyroJerk-std-X
+Line 165: 165 tBodyGyroJerk-std-Y
+Line 166: 166 tBodyGyroJerk-std-Z
+Line 201: 201 tBodyAccMag-mean
+Line 202: 202 tBodyAccMag-std
+Line 214: 214 tGravityAccMag-mean
+Line 215: 215 tGravityAccMag-std
+Line 227: 227 tBodyAccJerkMag-mean
+Line 228: 228 tBodyAccJerkMag-std
+Line 240: 240 tBodyGyroMag-mean
+Line 241: 241 tBodyGyroMag-std
+Line 253: 253 tBodyGyroJerkMag-mean
+Line 254: 254 tBodyGyroJerkMag-std
+Line 266: 266 fBodyAcc-mean-X
+Line 267: 267 fBodyAcc-mean-Y
+Line 268: 268 fBodyAcc-mean-Z
+Line 269: 269 fBodyAcc-std-X
+Line 270: 270 fBodyAcc-std-Y
+Line 271: 271 fBodyAcc-std-Z
+Line 345: 345 fBodyAccJerk-mean-X
+Line 346: 346 fBodyAccJerk-mean-Y
+Line 347: 347 fBodyAccJerk-mean-Z
+Line 348: 348 fBodyAccJerk-std-X
+Line 349: 349 fBodyAccJerk-std-Y
+Line 350: 350 fBodyAccJerk-std-Z
+Line 424: 424 fBodyGyro-mean-X
+Line 425: 425 fBodyGyro-mean-Y
+Line 426: 426 fBodyGyro-mean-Z
+Line 427: 427 fBodyGyro-std-X
+Line 428: 428 fBodyGyro-std-Y
+Line 429: 429 fBodyGyro-std-Z
+Line 503: 503 fBodyAccMag-mean
+Line 504: 504 fBodyAccMag-std
+Line 516: 516 fBodyBodyAccJerkMag-mean
+Line 517: 517 fBodyBodyAccJerkMag-std
+Line 529: 529 fBodyBodyGyroMag-mean
+Line 530: 530 fBodyBodyGyroMag-std
+Line 542: 542 fBodyBodyGyroJerkMag-mean
+Line 543: 543 fBodyBodyGyroJerkMag-std
+Line 555: 555 angle(tBodyAccMean,gravity)
+Line 556: 556 angle(tBodyAccJerkMean),gravityMean)
+Line 557: 557 angle(tBodyGyroMean,gravityMean)
+Line 558: 558 angle(tBodyGyroJerkMean,gravityMean)
+Line 559: 559 angle(X,gravityMean)
+Line 560: 560 angle(Y,gravityMean)
+Line 561: 561 angle(Z,gravityMean)
+Line 562: 562 Activity
+Line 563: 563 SubjectID
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
