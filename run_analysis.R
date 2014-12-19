@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 setwd("~/R/getdata/getDataProject")
+=======
+setwd("~/R/getdata/project")
+>>>>>>> origin/master
 
 # Reading the unzipped data.  
 xTest <- read.table("./UCI HAR Dataset//test/X_test.txt", sep="")
