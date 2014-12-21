@@ -1,105 +1,90 @@
-Line 1: 1 tBodyAcc-mean()-X
-Line 2: 2 tBodyAcc-mean()-Y
-Line 3: 3 tBodyAcc-mean()-Z
-Line 4: 4 tBodyAcc-std()-X
-Line 5: 5 tBodyAcc-std()-Y
-Line 6: 6 tBodyAcc-std()-Z
+Codebook
+============================================
+I first include the original description of the feature/column names:
+	The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+	
+	Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
+	Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-Line 41: 41 tGravityAcc-mean()-X
-Line 42: 42 tGravityAcc-mean()-Y
-Line 43: 43 tGravityAcc-mean()-Z
-Line 44: 44 tGravityAcc-std()-X
-Line 45: 45 tGravityAcc-std()-Y
-Line 46: 46 tGravityAcc-std()-Z
+	These signals were used to estimate variables of the feature vector for each pattern:  
+	'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-
-
-Line 81: 81 tBodyAccJerk-mean()-X
-Line 82: 82 tBodyAccJerk-mean()-Y
-Line 83: 83 tBodyAccJerk-mean()-Z
-Line 84: 84 tBodyAccJerk-std()-X
-Line 85: 85 tBodyAccJerk-std()-Y
-Line 86: 86 tBodyAccJerk-std()-Z
-
-
-Line 121: 121 tBodyGyro-mean()-X
-Line 122: 122 tBodyGyro-mean()-Y
-Line 123: 123 tBodyGyro-mean()-Z
-Line 124: 124 tBodyGyro-std()-X
-Line 125: 125 tBodyGyro-std()-Y
-Line 126: 126 tBodyGyro-std()-Z
-
-
-Line 161: 161 tBodyGyroJerk-mean()-X
-Line 162: 162 tBodyGyroJerk-mean()-Y
-Line 163: 163 tBodyGyroJerk-mean()-Z
-Line 164: 164 tBodyGyroJerk-std()-X
-Line 165: 165 tBodyGyroJerk-std()-Y
-Line 166: 166 tBodyGyroJerk-std()-Z
-
-
-Line 201: 201 tBodyAccMag-mean()
-Line 202: 202 tBodyAccMag-std()
-
-Line 214: 214 tGravityAccMag-mean()
-Line 215: 215 tGravityAccMag-std()
-
-
-Line 227: 227 tBodyAccJerkMag-mean()
-Line 228: 228 tBodyAccJerkMag-std()
-Line 240: 240 tBodyGyroMag-mean()
-Line 241: 241 tBodyGyroMag-std()
-Line 253: 253 tBodyGyroJerkMag-mean()
-Line 254: 254 tBodyGyroJerkMag-std()
-Line 266: 266 fBodyAcc-mean()-X
-Line 267: 267 fBodyAcc-mean()-Y
-Line 268: 268 fBodyAcc-mean()-Z
-Line 269: 269 fBodyAcc-std()-X
-Line 270: 270 fBodyAcc-std()-Y
-Line 271: 271 fBodyAcc-std()-Z
-Line 345: 345 fBodyAccJerk-mean()-X
-Line 346: 346 fBodyAccJerk-mean()-Y
-Line 347: 347 fBodyAccJerk-mean()-Z
-Line 348: 348 fBodyAccJerk-std()-X
-Line 349: 349 fBodyAccJerk-std()-Y
-Line 350: 350 fBodyAccJerk-std()-Z
-Line 424: 424 fBodyGyro-mean()-X
-Line 425: 425 fBodyGyro-mean()-Y
-Line 426: 426 fBodyGyro-mean()-Z
-Line 427: 427 fBodyGyro-std()-X
-Line 428: 428 fBodyGyro-std()-Y
-Line 429: 429 fBodyGyro-std()-Z
-Line 503: 503 fBodyAccMag-mean()
-Line 504: 504 fBodyAccMag-std()
-Line 516: 516 fBodyBodyAccJerkMag-mean()
-Line 517: 517 fBodyBodyAccJerkMag-std()
-Line 529: 529 fBodyBodyGyroMag-mean()
-Line 530: 530 fBodyBodyGyroMag-std()
-Line 542: 542 fBodyBodyGyroJerkMag-mean()
-Line 543: 543 fBodyBodyGyroJerkMag-std()
-Line 555: 555 angle(tBodyAccMean,gravity)
-Line 556: 556 angle(tBodyAccJerkMean),gravityMean)
-Line 557: 557 angle(tBodyGyroMean,gravityMean)
-Line 558: 558 angle(tBodyGyroJerkMean,gravityMean)
-Line 559: 559 angle(X,gravityMean)
-Line 560: 560 angle(Y,gravityMean)
-Line 561: 561 angle(Z,gravityMean)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=======================================================================
+Now I will give my best attempt to explain the column names. Please excuse my ignorance if I make any mistakes.	
+	
+"tBodyAcc-mean()-X" mean of body accelerometer time signal data along the X axis
+"tBodyAcc-mean()-Y" mean of body accelerometer time signal data along the Y axis
+"tBodyAcc-mean()-Z" mean of body accelerometer time signal data along the Z axis
+"tBodyAcc-std()-X" standard deviation of body accelerometer time signal data along the X axis
+"tBodyAcc-std()-Y" standard deviation of body accelerometer time signal data along the Y axis
+"tBodyAcc-std()-Z" standard deviation of body accelerometer time signal data along the Z axis
+"tGravityAcc-mean()-X" mean of gravity accelerometer time signal data along the X axis
+"tGravityAcc-mean()-Y" mean of gravity accelerometer time signal data along the Y axis
+"tGravityAcc-mean()-Z" mean of gravity accelerometer time signal data along the Z axis
+"tGravityAcc-std()-X"  standard deviation of gravity accelerometer time signal data along the X axis
+"tGravityAcc-std()-Y"  standard deviation of gravity accelerometer time signal data along the Y axis
+"tGravityAcc-std()-Z"  standard deviation of gravity accelerometer time signal data along the Z axis
+"tBodyAccJerk-mean()-X" mean of body accelerometer jerk time signal data along the X axis
+"tBodyAccJerk-mean()-Y" mean of body accelerometer jerk time signal data along the Y axis
+"tBodyAccJerk-mean()-Z" mean of body accelerometer jerk time signal data along the Z axis
+"tBodyAccJerk-std()-X" standard deviation of body accelerometer jerk time signal data along the X axis
+"tBodyAccJerk-std()-Y" standard deviation of body accelerometer jerk time signal data along the Y axis
+"tBodyAccJerk-std()-Z" standard deviation of body accelerometer jerk time signal data along the Z axis
+"tBodyGyro-mean()-X"  mean of body gyroscope time signal data along the X axis
+"tBodyGyro-mean()-Y" mean of body gyroscope time signal data along the Y axis
+"tBodyGyro-mean()-Z" mean of body gyroscope time signal data along the Z axis
+"tBodyGyro-std()-X" standard deviation of body gyroscope time signal data along the X axis
+"tBodyGyro-std()-Y" standard deviation of body gyroscope time signal data along the Y axis
+"tBodyGyro-std()-Z" standard deviation of body gyroscope time signal data along the Z axis
+"tBodyGyroJerk-mean()-X" mean of body gyroscope jerk time signal data along the X axis
+"tBodyGyroJerk-mean()-Y" mean of body gyroscope jerk time signal data along the Y axis
+"tBodyGyroJerk-mean()-Z" mean of body gyroscope jerk time signal data along the Z axis
+"tBodyGyroJerk-std()-X" standard deviation of body gyroscope jerk time signal data along the X axis
+"tBodyGyroJerk-std()-Y" standard deviation of body gyroscope jerk time signal data along the X axis
+"tBodyGyroJerk-std()-Z" standard deviation of body gyroscope jerk time signal data along the X axis
+"tBodyAccMag-mean()" mean of the Magnitude of the body accelerometer time signal data
+"tBodyAccMag-std()" standard deviation of the Magnitude of the body accelerometer time signal data
+"tGravityAccMag-mean()" mean of the magnitude of the gravity accelerometer time signal data
+"tGravityAccMag-std()" standard deviation of the magnitude of the gravity accelerometer time signal data
+"tBodyAccJerkMag-mean()" mean of the Magnitude of the body accelerometer jerk time signal data
+"tBodyAccJerkMag-std()" standard deviation of the Magnitude of the body accelerometer jerk time signal data
+"tBodyGyroMag-mean()" mean of the magnitude of body gyroscope time signal data
+"tBodyGyroMag-std()" standard deviation of the magnitude of body gyroscope time signal data
+"tBodyGyroJerkMag-mean()" mean of the magnitude of body gyroscope jerk time signal data
+"tBodyGyroJerkMag-std()" standard deviation of the magnitude of body gyroscope jerk time signal data
+"fBodyAcc-mean()-X" mean of body accelerometer fourier (FFT) data along the X axis
+"fBodyAcc-mean()-Y" mean of body accelerometer fourier (FFT) data along the Y axis
+"fBodyAcc-mean()-Z" mean of body accelerometer fourier (FFT) data along the Z axis
+"fBodyAcc-std()-X" standard deviation of body accelerometer fourier (FFT) data along the X axis
+"fBodyAcc-std()-Y" standard deviation of body accelerometer fourier (FFT) data along the Y axis
+"fBodyAcc-std()-Z" standard deviation of body accelerometer fourier (FFT) data along the Z axis
+"fBodyAccJerk-mean()-X" mean of body accelerometer jerk fourier (FFT) data along the X axis
+"fBodyAccJerk-mean()-Y" mean of body accelerometer jerk fourier (FFT) data along the Y axis
+"fBodyAccJerk-mean()-Z" mean of body accelerometer jerk fourier (FFT) data along the Z axis
+"fBodyAccJerk-std()-X"  standard deviation of body accelerometer jerk fourier (FFT) data along the X axis
+"fBodyAccJerk-std()-Y" standard deviation of body accelerometer jerk fourier (FFT) data along the Y axis
+"fBodyAccJerk-std()-Z" standard deviation of body accelerometer jerk fourier (FFT) data along the Z axis
+"fBodyGyro-mean()-X" mean of body gyroscope fourier (FFT) data along the X axis
+"fBodyGyro-mean()-Y" mean of body gyroscope fourier (FFT) data along the Y axis
+"fBodyGyro-mean()-Z" mean of body gyroscope fourier (FFT) data along the Z axis
+"fBodyGyro-std()-X" standard deviation of body gryroscope fourier (FFT) data along the X axis
+"fBodyGyro-std()-Y" standard deviation of body gryroscope fourier (FFT) data along the Y axis
+"fBodyGyro-std()-Z" standard deviation of body gryroscope fourier (FFT) data along the Z axis
+"fBodyAccMag-mean()" mean of the magnitude of body accelerometer Fourier (FFT) data
+"fBodyAccMag-std()"  standard deviation of the magnitude of body accelerometer Fourier (FFT) data
+"fBodyBodyAccJerkMag-mean()" mean of the magnitude of body jerk accelerometer Fourier (FFT) data
+"fBodyBodyAccJerkMag-std()" standard deviation of the magnitude of body jerk accelerometer Fourier (FFT) data
+"fBodyBodyGyroMag-mean()" mean of the magnitude of body gyroscope Fourier (FFT) data
+"fBodyBodyGyroMag-std()" standard deviation of the magnitude of body gyroscope Fourier (FFT) data
+"fBodyBodyGyroJerkMag-mean()" mean of the magnitude of body jerk gyroscope Fourier (FFT) data
+"fBodyBodyGyroJerkMag-std()" standard deviation of the magnitude of body jerk gyroscope Fourier (FFT) data
+"angle(tBodyAccMean,gravity)" vector created by the tbodyAccMean and gravityMean 
+"angle(tBodyAccJerkMean),gravityMean)" vector created by tBodyAccJerkMean and gravityMean
+"angle(tBodyGyroMean,gravityMean)" vector created by tBodyGyroMean and gravityMean
+"angle(tBodyGyroJerkMean,gravityMean)" vectory created by tBodyGyroMean and gravityMean
+"angle(X,gravityMean)" vector created by the X-axis? and gravityMean
+"angle(Y,gravityMean)" vector created by the Y-axis? and gravityMean
+"angle(Z,gravityMean)" vector created by the Z-axis? and gravityMean
+"activity"  One of 6 activity labes; "Walking" for walking, "walkingUp" for walking upstairs, "walkingDown" for walking downstairs, "sitting" for sitting, "standing" for standing, "laying" for laying down.
+"subjectID" The ID number assigned to each of the 30 students that participated in the study.
