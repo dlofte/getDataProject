@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 setwd("~/R/getdata/getDataProject")
-=======
-setwd("~/R/getdata/project")
->>>>>>> origin/master
+
+
 
 # Reading the unzipped data.  
 xTest <- read.table("./UCI HAR Dataset//test/X_test.txt", sep="")
@@ -65,5 +64,6 @@ dataMelt <- melt(data, id = c("SubjectID", "Activity"))
 head(dataMelt)
 tidyData <- dcast(dataMelt, SubjectID + Activity ~ variable, mean)
 
+write.table(tidyData, file = "tidyData.txt", row.name = F)
 
 
